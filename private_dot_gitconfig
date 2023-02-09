@@ -1,0 +1,15 @@
+[user]
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJtZyQAcNUe9YmCr6MskGNNz5DNbEcIT8SPFJ7hKPuBo
+	name = Sanel K.
+	email = 20467576+sanelkukic@users.noreply.github.com
+[commit]
+	gpgsign = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
